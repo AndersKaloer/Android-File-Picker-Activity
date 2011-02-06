@@ -13,8 +13,5 @@ Desktop.ini
 bin
 gen
 local.properties
-default.properties
 *.jar
 .settings
-.project
-.classpath
