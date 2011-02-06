@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.filepicker.filepickeractivityproject;
+package com.kaloer.filepicker;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -22,6 +22,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import com.filepicker.filepickeractivityproject.R;
 
 import android.app.ListActivity;
 import android.content.Context;

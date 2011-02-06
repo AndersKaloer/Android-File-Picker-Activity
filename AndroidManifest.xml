@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         	
-        <activity android:name="FilePickerActivity"
+        <activity android:name="com.kaloer.filepicker.FilePickerActivity"
         	android:label="@string/app_name"/>
 
     </application>

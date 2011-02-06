@@ -14,12 +14,14 @@
  * limitations under the License.
  */
 
-package com.filepicker.filepickeractivityproject;
+package com.kaloer.filepicker;
 
 import java.io.File;
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+
+import com.filepicker.filepickeractivityproject.R;
 
 import android.app.Activity;
 import android.content.Intent;
