@@ -20,6 +20,6 @@
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
   android:text="No files or directories"
-	android:textSize="28dip"
+	android:textSize="28sp"
 	android:gravity="center_vertical|center_horizontal"
 	/>
