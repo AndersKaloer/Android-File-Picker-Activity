@@ -93,13 +93,9 @@ public class FilePickerActivity extends ListActivity {
 		if(getIntent().hasExtra(EXTRA_SHOW_HIDDEN_FILES)) {
 			mShowHiddenFiles = getIntent().getBooleanExtra(EXTRA_SHOW_HIDDEN_FILES, false);
 		}
-		//if(getIntent().hasExtra(EXTRA_ACCEPTED_FILE_EXTENSIONS)) {
-			//acceptedFileExtensions = (String[])getIntent().getStringArrayListExtra(EXTRA_ACCEPTED_FILE_EXTENSIONS).toArray();
-			ArrayList<String> myArrayList = new ArrayList<String>();
-			myArrayList.add(".jpg");
-			myArrayList.add(".png");
-			acceptedFileExtensions = myArrayList.toArray(new String[myArrayList.size()]);
-		//}		
+		if(getIntent().hasExtra(EXTRA_ACCEPTED_FILE_EXTENSIONS)) {
+			acceptedFileExtensions = (String[])getIntent().getStringArrayListExtra(EXTRA_ACCEPTED_FILE_EXTENSIONS).toArray();
+		}
 	}
 	
 	@Override
@@ -197,12 +193,12 @@ public class FilePickerActivity extends ListActivity {
 			textView.setSingleLine(true);
 			
 			textView.setText(object.getName());
-			if(object.isDirectory()) {
-				// Show the folder icon
-				imageView.setImageResource(R.drawable.folder);
-			} else {
+			if(object.isFile()) {
 				// Show the file icon
 				imageView.setImageResource(R.drawable.file);
+			} else {
+				// Show the folder icon
+				imageView.setImageResource(R.drawable.folder);
 			}
 			
 			return row;

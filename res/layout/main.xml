@@ -20,4 +20,25 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
+    <Button
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/start_file_picker_button"
+    	android:text="Start file picker"
+    	/>
+    <TextView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="Selected file"
+    	android:textStyle="bold"
+    	android:textColor="#fff"
+    	android:textSize="24sp"
+    	/>
+    <TextView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/file_path_text_view"
+    	android:text="No file has been selected"
+    	android:textSize="18sp"
+    	/>
 </LinearLayout>
