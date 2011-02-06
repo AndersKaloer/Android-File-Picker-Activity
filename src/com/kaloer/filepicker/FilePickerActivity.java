@@ -23,7 +23,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.filepicker.filepickeractivityproject.R;
+import com.kaloer.filepicker.R;
 
 import android.app.ListActivity;
 import android.content.Context;

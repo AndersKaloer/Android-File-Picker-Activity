@@ -21,7 +21,7 @@ import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 
-import com.filepicker.filepickeractivityproject.R;
+import com.kaloer.filepicker.R;
 
 import android.app.Activity;
 import android.content.Intent;
