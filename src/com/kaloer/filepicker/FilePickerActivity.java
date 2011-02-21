@@ -96,7 +96,8 @@ public class FilePickerActivity extends ListActivity {
 			mShowHiddenFiles = getIntent().getBooleanExtra(EXTRA_SHOW_HIDDEN_FILES, false);
 		}
 		if(getIntent().hasExtra(EXTRA_ACCEPTED_FILE_EXTENSIONS)) {
-			acceptedFileExtensions = (String[])getIntent().getStringArrayListExtra(EXTRA_ACCEPTED_FILE_EXTENSIONS).toArray();
+			ArrayList<String> collection = getIntent().getStringArrayListExtra(EXTRA_ACCEPTED_FILE_EXTENSIONS);
+			acceptedFileExtensions = (String[]) collection.toArray(new String[collection.size()]);
 		}
 	}
 	
